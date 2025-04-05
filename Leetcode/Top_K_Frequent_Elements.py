@@ -20,15 +20,15 @@ class Solution:
             if len(result)>k:
                 break
         return result[:k]
-# Create the Solution object
+
 solution = Solution()
 
-# Example input
+
 nums = [1, 1, 1, 2, 2, 3]
 k = 2
 
-# Call the method
+
 result = solution.topKFrequent(nums, k)
 
-# Output the result
+
 print(result)
