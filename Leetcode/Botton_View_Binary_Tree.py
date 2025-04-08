@@ -28,6 +28,7 @@ class Solution:
             
             if node.right:
                 q.put((node.right,hd+1))
+        
         for key in sorted(mpp.keys()):
             ans.append(mpp[key])
         return ans
@@ -42,11 +43,10 @@ root.right = TreeNode(3)
 root.right.left = TreeNode(9)
 root.right.right = TreeNode(10)
 
-# Creating the Solution object and computing the bottom view
+
 solution = Solution()
 bottomView = solution.bottomView(root)
 
-# Printing the result
 print("Bottom View Traversal:")
 for node in bottomView:
     print(node, end=" ")
